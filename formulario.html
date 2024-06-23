@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Adopta Gatitos Chile</title>
+    
+    <!--Enlaces de diferentes funcionalidades-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!--Import desde el archivo del trabajo-->
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="script.js"></script>
+    <script defer src="crud.js"></script>
+
+</head>
+
+<body class="fondodepagina">
+
+    <div class="content">
+        <a href="formulario.html" class="box">Home</a>
+        <a href="quienessomos.html" class="box">Acerca de nosotros</a>
+    </div><br><br><br>
+
+    <!--Información de la pagina-->
+    <div class="container content text-center">
+        <h1>Adopta Gatitos Chile</h1><br>
+
+        <h2>¡Se parte de Nosotros!</h2>
+
+        <div>
+            <p>
+                Fundación Gatitos de Chile necesita personas comprometidas y conscientes con la realidad chilena así
+                como también con nuestros objetivos. Un voluntariado debe ser una persona responsable, proactiva,
+                independiente y capaz de entregar tiempo y dedicación a otros. Para conocerte mejor, dejamos a
+                continuación un formulario con preguntas y datos personales que necesitamos para coordinar y saber
+                exactamente en qué podrías ayudarnos.
+            </p>
+        </div>
+        
+    </div><br>
+
+    <!--Formulario-->
+        <div class="container content text-center">
+            <h3 class="col-sm-12 text-center">Formulario de inscripción</h3><br>
+
+            <form id="form" action="/" class="grid row">
+
+                <!-- Campo para el nombre -->
+                <div class="form-group row">
+                    <label for="nombre" class="col-sm-3 col-form-label">Nombre Completo:</label>
+                    <div class="col-sm-4 input-control">
+                        <input type="text" class="form-control " name="nombre" id="nombre" placeholder="Ingresa tu nombre completo">
+                        <div class="error"></div>
+                    </div>
+                </div>
+
+                <!-- Campo para el correo electrónico -->
+                <div class="form-group row">
+                    <label for="correo" class="col-sm-3 col-form-label">Correo:</label>
+                    <div class="col-sm-4 input-control">
+                        <input type="email" class="form-control" name="correo" id="correo" placeholder="Ingresa tu correo electrónico">
+                        <div class="error"></div>
+                    </div>
+                </div>
+
+                <!--Confirmación de corre-->
+                <div class="form-group row">
+                    <label for="ccorreo" class="col-sm-3 col-form-label">Confirmación de correo:</label>
+                    <div class="col-sm-4 input-control">
+                        <input type="email" class="form-control" name="correo" id="ccorreo" placeholder="Confirma correo electrónico">
+                        <div class="error"></div>
+                    </div>
+                </div>
+
+                <!-- Campo para el número de celular -->
+                <div class="form-group row">
+                    <label for="numero" class="col-sm-3 col-form-label">Numero de contacto:</label>
+                    <div class="col-sm-4 input-control">
+                        <input type="tel" class="form-control" name="numero" id="numero" placeholder="Ingresa solo números">
+                        <div class="error"></div>
+                    </div>
+                </div><br><br>
+
+                <!--Selección de genero (que ya no debería consultarse en los formularios )-->
+                <div class="form-group row">
+                    <label for="genero" class="col-sm-3 col-form-label">Género:</label>
+                    <div class="col-sm-4 input-control">
+                        <select class="form-control" name="genero" id="genero">
+                            <option value="" disabled selected>Seleccione su género</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="No binario">No binario</option>
+                            <option value="Queer">Queer</option>
+                        </select>
+                        <div class="error"></div>
+                    </div>
+                </div>
+
+                <!--Checkbox de términos y condiciones -->
+                <div>
+                    <input type="checkbox" id="term" value="checkbox">
+                    <label for="term" class="labelCheck">Términos y condiciones</label>
+                    <div class="error"></div>
+                </div><br><br>
+
+                <!-- Botón de envío -->
+                <div class="form-group row">
+                    <div class="col-sm-12 text-center">
+                        <button type="submit" class="btn btn-primary" id="enviar">Enviar</button><br><br>
+                        <div class="error"></div>
+                    </div>
+                </div>
+
+            </form>
+            <div id="div-usuario" class="conteiner content"></div>
+        </div>
+        <footer class="container text-center"><p>&copy; Gracias por ser parte de nosotros.
+            <p>
+                Puedes contactarnos por WhatsApp al numero +56 9 999 999 9 
+            </p>
+        </p></footer>
+
+</body>
+</html>
