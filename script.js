@@ -1,8 +1,8 @@
 /*Esta linea de código asegura que se inicie el Java Script desde que el DOM este cargado*/
 document.addEventListener("DOMContentLoaded", function() {
     
-    const form = document.getElementById("form");
-    const nombre = document.getElementById("nombre");
+        const form = document.getElementById("form");
+        const nombre = document.getElementById("nombre");
         const correo = document.getElementById("correo");
         const ccorreo = document.getElementById("ccorreo");
         const numero = document.getElementById("numero");
