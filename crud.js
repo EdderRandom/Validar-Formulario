@@ -12,7 +12,6 @@ const objUsuario = {
 }
 
 let editando = false;
-
 const formulario = document.getElementById("form");
 const nombreInput = document.getElementById("nombre");
 const correoInput = document.getElementById("correo");
