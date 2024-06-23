@@ -60,11 +60,8 @@ function validarFormulario(e) {
 }
 
 function agregarUsuario() {
-
     listaUsuario.push({ ...objUsuario });
-
     mostrarUsuario();
-
     formulario.reset();
     limpiarObjeto();
 }
