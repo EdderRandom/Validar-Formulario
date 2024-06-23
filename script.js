@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
         validateInputs();
     });
-
+    
     /*Valido cada uno de los campos y les asigno los colores para marcar si están los datos o no */
     const validateInputs = () => {
         const nombreValue = nombre.value.trim();
